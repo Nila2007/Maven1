@@ -19,7 +19,7 @@ public class Electronics {
          driver.manage().window().maximize();
          driver.get("https://demo.nopcommerce.com/ ");
         driver.findElement(By.linkText("Electronics")).click();
-         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          driver.findElement(By.xpath(" //div[@class='page-body']//div[2]//div[1]//div[1]//a[1]//img[1]")).click();
          driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//div[@class='item-grid']//div[1]//div[1]//div[2]//div[3]//div[2]//input[1]")).click();
